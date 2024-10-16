@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,58 +11,17 @@
         color: wheat;
         font-size: 160%;
     }
-
-    caption {
-        margin: 5%;
-    }
-
-    table, th, td {
-        border: 1px solid aqua;
-        border-collapse: collapse;
-    }
-
-    th, td {
-        padding-top: 10px;
-        padding-bottom: 20px;
-        padding-left: 30px;
-        padding-right: 40px;
-    }
-
-    tr :hover {
-        background-color: maroon;
-        color: cyan;
-    }
 </style>
 </head>
 <body>
 
-<table style="width: 100%;">
-    <caption>Kelompok . . .</caption>
-    <tr>
-        <th>Nama</th>
-        <th>NPM</th>
-    </tr>
-    <tr>
-        <td>Muhammad Rangga</td>
-        <td>51422130</td>
-    </tr>
-    <tr>
-        <td>Muhammad Varza</td>
-        <td>51422166</td>
-    </tr>
-    <tr>
-        <td>Raafi Ferdiansyah</td>
-        <td>51422308</td>
-    </tr>
-    <tr>
-        <td>Rambu Ilalang</td>
-        <td>51422382</td>
-    </tr>
-    <tr>
-        <td>Samuel Devano</td>
-        <td>51422500</td>
-    </tr>
-</table>
+<form>
+    <label for="name">Nama</label><br>
+    <input type="text" id="name" name="name" value="mhs"><br>
+    <label for="npm">NPM</label><br>
+    <input type="text" id="npm" name="npm" value="0"><br><br>
+    <input type="submit" value="Submit">
+</form>
     
 </body>
 </html>
