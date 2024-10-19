@@ -3,31 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Universitas</title>
+
+<style>
+    body {
+        font-size: 120%;
+    }
+
+    .judul {
+        text-align: center;
+        margin: 5%;
+    }
+    
+    .horizontal-list {
+        display: flex;
+        list-style-type: none;
+        background: aquamarine;
+        margin-bottom: 0px;
+        padding: 0.5%;
+    }
+    .horizontal-list li {
+        width: 100%;
+        text-align: center;
+    }
+
+    a {
+        color: black;
+        text-decoration: solid;
+    }
+    a:hover {
+        color: cyan;
+        background-color: blue;
+    }
+
+    .gambar1 {
+        width: 100%;
+    }
+
+    .home {
+        text-align: justify;
+        line-height: 210%;
+    }
+    
+</style>
 </head>
 <body>
 
-    <h1 style="margin-top: 5%;">Universitas Gunadarma</h1>
-    <hr style="background-color: rgb(160, 160, 160); padding: 5px;">
-    <br>
-    <ul style="margin: 1%;">
+    <h1 class="judul">Universitas Gunadarma</h1>
+    <!-- <marquee >
+        <pre>
+            Universitas Gunadarma        |        Kampus E        |        Kelas 3IA12        |        PTA 2024 / 2025        |
+        </pre>
+    </marquee> -->
+    <ul class="horizontal-list">
         <li>
-            <a href="#Home">Home</a>
+            <a href="#Home">HOME</a>
         </li>
         <li>
-            <a href="html/kampus.html">Kampus</a>
+            <a href="html/kampus.html">KAMPUS</a>
         </li>
         <li>
-            <a href="html/prodi.html">Prodi</a>
+            <a href="html/prodi.html">PRODI</a>
         </li>
         <li>
-            <a href="html/lokasi.html">
-                Lokasi
-            </a>
+            <a href="html/lokasi.html">LOKASI</a>
+        </li>
+        <li>
+            <a href="html/more.html">MORE</a>
         </li>
     </ul>
-    <img src="image/gundarE.jpg" alt="kampus e kelapa dua" style="margin: 2%; width: 80%; height: 600px;">
-    <p id="Home" style="text-align: justify; font-size: large; margin: 2%;">
+    <img src="image/gundarE.jpg" alt="kampus e kelapa dua" title="Kampus E Kelapa Dua" class="gambar1">
+    <p id="home" class="home">
         Universitas Gunadarma (UG) adalah sebuah universitas swasta di Indonesia yang berlokasi di Depok, Jawa Barat1 Universitas
         ini didirikan pada tahun 1981 dan terus berkembang hingga menjadi salah satu perguruan tinggi terkemuka di Indonesia1 UG
         memiliki berbagai program studi mulai dari D3, S1, S2, hingga S3, dan telah memperoleh akreditasi unggul dari Badan Akreditasi
