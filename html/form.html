@@ -5,58 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Input</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        form {
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-            margin-top: 12px;
-        }
-        input[type="text"], input[type="number"], input[type="date"], select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        textarea {
-            resize: vertical;
-        }
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
+    
+<style>
+
+    a {
+        text-decoration-line: none;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    form {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        margin-top: 12px;
+    }
+    input[type="text"], input[type="number"], input[type="date"], select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    .opsi {
+        text-align: center;
+        color: #45a049;
+    }
+    .opsi:hover {
+        color: blue;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+</style>
 </head>
 <body>
 
     <h2 style="text-align: center;">Formulir Data Diri</h2>
 
     <form action="#" method="post">
-        <label for="nama">Nama:</label>
+        <label for="nama">Nama :</label>
         <input type="text" id="nama" name="nama" required>
 
-        <label for="id">Nomor ID :</label>
+        <label for="id">NPM :</label>
         <input type="number" id="id" name="id" max="99999999" required>
+        
+        <label for="kota">Jurusan :</label>
+        <input type="text" id="kota" name="kota" required>
 
         <label for="gender">Jenis Kelamin:</label>
         <select id="gender" name="gender" required>
@@ -67,14 +88,14 @@
         <label for="dob">Tanggal Lahir:</label>
         <input type="date" id="dob" name="dob" required>
 
-        <label for="kota">Kota Lahir:</label>
-        <input type="text" id="kota" name="kota" required>
-
         <label for="saran">Kotak Saran:</label>
         <textarea id="saran" name="saran" rows="4" placeholder="Tulis saran Anda di sini..."></textarea>
 
         <input type="submit" value="Kirim">
     </form>
-
+    <a href="/html/more.html">
+        <p class="opsi">BACK</p>
+    </a>
+    
 </body>
 </html>
