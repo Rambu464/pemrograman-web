@@ -1,16 +1,16 @@
 body {
     background-color: orange;
+    font-size: 750%;
+    margin: 0%;
 }
 
 #n {
     color: purple;
     background-color: black;
-    font-size: 1200%;
     text-align: center;
 }
 
 #h {
     color: black;
-    font-size: 1200%;
     text-align: center;
 }
