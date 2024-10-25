@@ -37,6 +37,23 @@
         background-color: blue;
     }
 
+    footer {
+        align-items: center;
+        background-color: darkslateblue;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 1%;
+        flex-wrap: wrap;
+    }
+    
+    .footer-info, .footer-credits {
+        margin-bottom: 2%;
+    }
+    .footer-info p, .footer-credits p {
+        margin: 2% 0;
+    }
+    
     .gambar1 {
         width: 100%;
     }
@@ -44,6 +61,12 @@
     .home {
         text-align: justify;
         line-height: 210%;
+    }
+
+    hr {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 100%;
     }
 
     iframe {
@@ -71,6 +94,9 @@
             <a href="#home">HOME</a>
         </li>
         <li>
+            <a href="#profil">PROFIL</a>
+        </li>
+        <li>
             <a href="html/kampus.html">KAMPUS</a>
         </li>
         <li>
@@ -78,6 +104,9 @@
         </li>
         <li>
             <a href="html/lokasi.html">LOKASI</a>
+        </li>
+        <li>
+            <a href="#kontak">KONTAK</a>
         </li>
         <li>
             <a href="html/more.html">MORE</a>
@@ -91,12 +120,24 @@
         Nasional (BAN)2 Universitas Gunadarma juga dikenal dengan tema "Gunadarma Untuk Indonesia," yang menekankan peran pentingnya
         dalam mencetak SDM yang handal untuk masa depan Indonesia2
     </p>
+    <hr>
     <h2 class="judul2">Profil Kampus Universitas Guandarma</h2>
-    <iframe src="https://www.youtube.com/embed/1PA-dWPF94M?si=MrWzeuzZZN6BWDt4" title="Profil Kampus"
+    <iframe id="profil" src="https://www.youtube.com/embed/1PA-dWPF94M?si=MrWzeuzZZN6BWDt4" title="Profil Kampus"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         browser anda tidak dapat menampilkan video ini
     </iframe>
+    
+    <footer id="kontak">
+        <div class="footer-info">
+            <h4>Kontak kami</h4>
+            <p>Email : mahasiswa@gunadarma.com</p>
+            <p>Telepon : +628 720 076</p>
+        </div>
+        <div class="footer-credits">
+            <p>&copy; UG2024. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
