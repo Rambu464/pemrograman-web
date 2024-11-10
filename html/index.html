@@ -83,12 +83,12 @@
 <script>
     function changeImage() {
         const gambar = document.getElementById("gambar1");
-        if (gambar.src.includes("image/gundarG.jpeg")) {
-            gambar.src = "image/gundarE.jpg"
-        } else if (gambar.src.includes("image/gundarE.jpg")) {
-            gambar.src = "image/gundarD.jpg"
+        if (gambar.src.includes("../image/gundarG.jpeg")) {
+            gambar.src = "../image/gundarE.jpg"
+        } else if (gambar.src.includes("../image/gundarE.jpg")) {
+            gambar.src = "../image/gundarD.jpg"
         } else {
-            gambar.src = "image/gundarG.jpeg"
+            gambar.src = "../image/gundarG.jpeg"
         }
     }
 </script>
@@ -109,22 +109,22 @@
             <a href="#profil">PROFIL</a>
         </li>
         <li>
-            <a href="html/kampus.html">KAMPUS</a>
+            <a href="kampus.html">KAMPUS</a>
         </li>
         <li>
-            <a href="html/prodi.html">PRODI</a>
+            <a href="prodi.html">PRODI</a>
         </li>
         <li>
-            <a href="html/lokasi.html">LOKASI</a>
+            <a href="prodi.html">LOKASI</a>
         </li>
         <li>
             <a href="#kontak">KONTAK</a>
         </li>
         <li>
-            <a href="html/more.html">MORE</a>
+            <a href="more.html">MORE</a>
         </li>
     </ul>
-    <img src="image/gundarD.jpg" alt="kampus e kelapa dua" title="Kampus E Kelapa Dua" id="gambar1" class="gambar1" onclick="changeImage()">
+    <img src="../image/gundarE.jpg" alt="kampus e kelapa dua" title="Kampus E Kelapa Dua" id="gambar1" class="gambar1" onclick="changeImage()">
     <p id="home" class="home">
         Universitas Gunadarma (UG) adalah sebuah universitas swasta di Indonesia yang berlokasi di Depok, Jawa Barat1 Universitas
         ini didirikan pada tahun 1981 dan terus berkembang hingga menjadi salah satu perguruan tinggi terkemuka di Indonesia1 UG
